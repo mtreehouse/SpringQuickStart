@@ -1,7 +1,15 @@
 package polymorphism;
 
+import javax.inject.Inject;
+
+import org.springframework.stereotype.Component;
+
+@Component("tv")
 public class LgTV implements TV{
 
+	@Inject
+	private Speaker speaker;
+	
 	public void powerOn() {
 		System.out.println("LgTV--전원 켠다.");
 	}
@@ -11,11 +19,11 @@ public class LgTV implements TV{
 	}
 	
 	public void volumeUp() {
-		System.out.println("LgTV==소리 올린다..");
+		speaker.volumeUp();
 	}
 	
 	public void volumeDown() {
-		System.out.println("LgTV==소리 내린다..");
+		speaker.volumeDown();
 	}
 	
 }
