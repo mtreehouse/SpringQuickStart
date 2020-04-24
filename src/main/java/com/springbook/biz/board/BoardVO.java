@@ -9,6 +9,18 @@ public class BoardVO {
 	private String content;
 	private Date regDate; 
 	private int cnt;
+	
+	public BoardVO() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public BoardVO(String title, String writer, String content) {
+		super();
+		this.title = title;
+		this.writer = writer;
+		this.content = content;
+	}
+	
 	public int getSeq() {
 		return seq;
 	}
