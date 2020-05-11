@@ -14,6 +14,24 @@ public class BoardVO {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public BoardVO(int seq, String title, String writer, String content, Date regDate, int cnt) {
+		super();
+		this.seq = seq;
+		this.title = title;
+		this.writer = writer;
+		this.content = content;
+		this.regDate = regDate;
+		this.cnt = cnt;
+	}
+
+	public BoardVO(int seq, String title, String writer, String content) {
+		super();
+		this.seq = seq;
+		this.title = title;
+		this.writer = writer;
+		this.content = content;
+	}
+	
 	public BoardVO(String title, String writer, String content) {
 		super();
 		this.title = title;
